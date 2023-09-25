@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Lexend+Deca:wght@600&family=Manrope&family=Nosifer&family=Orienta&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,900&family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.App{
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #f0ecec;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: sticky;
+    top: 0;
+}
+
+.header .icerik{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.sol h2{
+    font-size: 20px;
+}
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.cart-item span{
+    font-size: 20px;
+}
+
+.header button h1{
+    margin: 0 5px;
+}
+
+.buyuk{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #493fbe;
+    color: #fff;
+    height: 30px;
+    border: none;
+    animation: pulse 8s infinite;
+    transition: .2s ease;
+    border-radius: 10px;
+}
+
+.buyuk:hover{
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% {
+      background-color: red;
+    }
+    50% {
+      background-color: #493fbe;
+    }
+    100% {
+      background-color: red;
+    }
+}
+
+img{
+    width: 200px;
+}
+
+.cart-item h2{
+    font-size: 16px;
+    color: red;
+}
+
+.listeler{
+    width: 100%;
+    margin: 40px auto 40px auto;
+    text-align: center;
+}
+
+.listeler .h2{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.kartlar{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.listeler .kart{
+    border: 1px solid #f0ecec;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 280px;
+    text-align: center;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.listeler .kart:hover{
+    box-shadow: rgba(255, 255, 255, 0) 0px 7px 29px 0px;
+}
+
+.listeler .kart img{
+    width: 200px;
+}
+
+.listeler .kart p{
+    font-size: 15px;
+    margin: 2px 0;
+}
+
+.kart h2{
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+.listeler .alBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 5px 20px;
+    background-color: #493fbe;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: .2s;
+}
+
+.alBtn:active{
+    background-color: #8781ce;
+}
+
+.urunler{
+    max-width: 1200px;
+    margin: 40px auto 40px auto;
+}
+
+.urunler .h2{
+    margin: 5px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.urunler-kart{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.urunler .kart{
+    border: 1px solid #f0ecec;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 280px;
+    text-align: center;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.urunler .kart:hover{
+    box-shadow: rgba(255, 255, 255, 0) 0px 7px 29px 0px;
+}
+
+.urunler .geriBtn{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: #8781ce;
+    cursor: pointer;
+}
+
+.urunler .geriBtn span{
+    color: #493fbe;
+}
+
+.sat{
+    background-color: red;
+}
+
+.kart-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.devamBtn{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(76, 255, 97);
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.devamBtn:hover{
+    background-color: rgb(61, 249, 83);
+}
+
+.devamBtn span{
+    font-size: 22px;
+    color: #fff;
+    animation: moveRightToLeft 5s linear infinite;
+}
+
+@keyframes moveRightToLeft {
+    0% {
+      transform: translateX(0%);
+    }
+    50%{
+      transform: translateX(70%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    .header{
+        width: 100%;
+        height: 70px;
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #f0ecec;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        position: fixed;
+        top: 0;
+    }
+
+    .header .icerik{
+        padding: 0 20px;
+    }
+
+    .listeler{
+        margin-top: 120px;
+    }
+
+    .urunler{
+        margin-top: 120px;
+    }
+
+    .urunler-kart{
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .urunler .geriBtn{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        color: #8781ce;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .kartlar{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+}
